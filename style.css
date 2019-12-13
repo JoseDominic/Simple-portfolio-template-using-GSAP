@@ -1,0 +1,209 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+    width: 100%;
+    max-width: 100%;
+    max-height: 100%;
+    overflow-y: hidden;
+    overflow-x: hidden;
+    font-family: "Oswald",sans-serif;
+    background:whitesmoke;
+}
+
+@media only screen and (min-width:1026px){
+header{
+    height: 100vh;
+    position: relative;
+    display: flex;
+}
+
+nav {
+    background: white;
+    z-index: 2; /*specifies stack order ie.rank of which one is on top, bigger is higher */
+    width: 40%;
+    height: 20%;
+    color:black;
+}
+
+.nav-closed {
+    width: 40%;
+    height: 20%;
+    display: flex;
+    justify-content: space-around;
+    position: absolute;
+    align-items: center;
+}
+
+.nav-closed ul{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+    list-style: none;
+    color:black;
+}
+
+.nav-open {
+    width: 40%;
+    height: 80%;
+    top:20%;
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    opacity: 0;
+    pointer-events: none;
+}
+
+.cover {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    right: 0;
+    object-fit: fill;
+    /* object-position:top; */
+}
+
+.projects {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width:100%;
+    
+}
+
+.projects h2{
+    font-size: 50px;
+}
+
+.projects ul{
+    list-style: none;
+}
+
+.nav-images {
+    justify-content: space-around;
+    width: 100%;
+    display: flex;
+}
+
+.projects ul li {
+    padding-bottom: 10px;
+}
+
+.projects ul li a {
+    text-decoration: none;
+    color: tomato;
+}
+
+.nav-images img{
+    height: 250px;
+    width: 200px;
+}
+}
+
+@media only screen and (max-width:1026px){
+    header{
+        height: 100vh;
+        width: 100vw;
+        position: relative;
+        display: flex;
+    }
+    
+    nav {
+        background: white;
+        z-index: 2; /*specifies stack order ie.rank of which one is on top, bigger is higher */
+        width: 100vw;
+        height: 20%;
+        color:black;
+    }
+    
+    .nav-closed {
+        background-color: whitesmoke;
+        width: 100vw;
+        height: 20%;
+        display: flex;
+        position: absolute;
+        justify-content: space-around;
+        align-items: center;
+    }
+    
+    .nav-closed ul{
+        display: flex;
+        width: 100vw;
+        justify-content: space-evenly;
+        font-size: medium;
+        list-style: none;
+        color:black;
+    }
+
+    .nav-closed h3{
+        font-size: large;
+    }
+
+    
+    .nav-open {
+        width: 90%;
+        height: 100%;
+        top:20%;
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-evenly;
+        align-items: center;
+        opacity: 0;
+        pointer-events: none;
+    }
+    
+    .cover {
+        height: 100%;
+        position: absolute;
+        width: 100%;
+        top: 0;
+        right: 0;
+        object-fit: fill;
+        /* object-position:top; */
+    }
+    
+    .projects {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        width:100%;
+        
+    }
+    
+    .projects h2{
+        font-size: 50px;
+    }
+    
+    .projects ul{
+        list-style: none;
+    }
+    
+    .nav-images {
+        justify-content: space-around;
+        width: 100%;
+        display: flex;
+    }
+    
+    .projects ul li {
+        padding-bottom: 10px;
+    }
+    
+    .projects ul li a {
+        text-decoration: none;
+        font-size: large;
+        color: tomato;
+    }
+    
+    .nav-images img{
+        height: 250px;
+        width: 200px;
+    }
+    }
